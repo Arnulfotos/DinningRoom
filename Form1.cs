@@ -95,7 +95,7 @@ namespace DinningRoom
 
             while (true)
             {
-                Console.WriteLine($"Filosofo {id} esta pensando...");
+                //Console.WriteLine($"Filosofo {id} esta pensando...");
                 Thread.Sleep(new Random().Next(1000, 3000)); // Simular el tiempo de pensar
 
                 // Controlar el acceso a los palillos para evitar interbloqueo
@@ -127,7 +127,7 @@ namespace DinningRoom
         // Metodo que simula la accion de comer
         static void Comer(int id)
         {
-            Console.WriteLine($"Filosofo {id} tomo ambos palillos y esta comiendo.");
+            //Console.WriteLine($"Filosofo {id} tomo ambos palillos y esta comiendo.");
             Thread.Sleep(new Random().Next(1000, 3000)); // Simular el tiempo de comer
 
             // Actualizar el contador de comidas de manera segura
@@ -135,9 +135,10 @@ namespace DinningRoom
             {
                 vecesComido[id]++; // Registrar que este filosofo ha comido
                 totalComidas++; // Incrementar el conteo global de comidas
+
             }
 
-            Console.WriteLine($"Filosofo {id} termino de comer.");
+            //Console.WriteLine($"Filosofo {id} termino de comer.");
         }
 
 
