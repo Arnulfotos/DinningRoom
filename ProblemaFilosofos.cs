@@ -126,4 +126,4 @@
         }
 
         Console.WriteLine($"Filosofo {id} termino de comer.");
-    }
+    };

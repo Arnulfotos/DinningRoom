@@ -39,6 +39,7 @@
             label4 = new Label();
             label5 = new Label();
             Title = new Label();
+            InitBtn = new Button();
             SuspendLayout();
             // 
             // progressBar1
@@ -130,11 +131,22 @@
             Title.TabIndex = 9;
             Title.Text = "The Dinning Room";
             // 
+            // InitBtn
+            // 
+            InitBtn.Location = new Point(673, 25);
+            InitBtn.Name = "InitBtn";
+            InitBtn.Size = new Size(75, 23);
+            InitBtn.TabIndex = 10;
+            InitBtn.Text = "Init";
+            InitBtn.UseVisualStyleBackColor = true;
+            InitBtn.Click += InitBtn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(InitBtn);
             Controls.Add(Title);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -165,5 +177,6 @@
         private Label label4;
         private Label label5;
         private Label Title;
+        private Button InitBtn;
     }
 }
